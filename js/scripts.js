@@ -58,15 +58,9 @@ function calctotalPrice(e) {
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
     
         console.log(totalPrice);
-    alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice +"." )
+    alert("Total Cost of Pizzas is" + getNumber() + " pizzas has been processed.Your total cost is " + totalPrice +"." )
 
 }
-
-
-
-// Delivery form inputs and alerts
-
-
 
 $(document).ready(function () {
     $("#delivery").submit(function () {
@@ -77,7 +71,7 @@ $(document).ready(function () {
 
         alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
         // $(this).get(0).reset();
-        //  event.preventDefault();
+        // event.preventDefault();
     });
     
 });
