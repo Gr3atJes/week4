@@ -3,15 +3,8 @@ body{
     font-family: 'Julius Sans One', sans-serif;
   }
   
-  .align-center{
-    text-align: center;
-  }
   
-  .transparent{
-    background: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
-    background-attachment: fixed;
-  }
+
   
   .alert{
     text-align: center;
@@ -24,76 +17,7 @@ body{
     z-index:9999;
     border-radius:0px;
   }
-  
 
-  
-  .nav-link{
-    font-family: 'Julius Sans One', sans-serif;
-    color: #000;
-  }
-  
-  .brand-name{
-    font-family: 'Pattaya', sans-serif;
-    color: #000;
-  }
-  
-  .navbar-brand{
-    display: flex;
-  }
-  
-  .navbar-brand h5{
-    margin-top: 10px;
-    margin-left: 10px;
-  }
-  
-  /* jumbotron styling */
-  .heading{
-    font-family: 'Abril Fatface', cursive;
-  }
-  
-  .jumbotron{
-    border-radius: 0;
-  }
-  
-  .jumbotron-text{
-    margin-top: 150px;
-  }
-  
-  hr.style-one {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
-    background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
-    background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
-    background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
-  }
-  
-  .c-head{
-    font-weight:900;
-    font-size: 58px;
-    mix-blend-mode: luminosity;
-  }
-  
-  .c-par{
-    font-weight: 900;
-    mix-blend-mode: luminosity;
-  }
-  
-  .jumbo-bg{
-    background-image: url("../images/blur-burn-dark-1082343.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 480px;
-  }
-  /* cards styling */
-  .card{
-    margin-bottom: 20px;
-  }
-  
-  .flex{
-    display: flex;
-  }
   
   /* modal styling */
   form {
@@ -156,25 +80,7 @@ body{
     display: none;
   }
   
-  /* about us */
-  .about{
-    background-image: url("../images/italian-italy-pasta-3498.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 240px;
-  }
-  
-  .us{
-    font-size: 58px;
-    margin-top: 20px;
-  }
-  
-  /* founder */
-  .founder{
-    -webkit-box-shadow: 0 8px 6px -6px #999;
-    -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -6px #999;
-  }
+
   
   /* footer */
   .footer-logo{
