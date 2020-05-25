@@ -14,7 +14,9 @@ the website was created and edited successfully with the following technologies
 # Dependecies
 
 # Setup & Installation Instructions
-
+On the main tab fork the repo to your local device to download it 
+Create a folder as shown in the code and using IDE open it
+Run the code snippet with your browser
 # Contact
 
 # License Information
