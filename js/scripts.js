@@ -63,7 +63,7 @@ function calctotalPrice(e) {
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
 
     console.log(totalPrice);
-    alert("Total Cost of Pizzas is" + getNumber() + " pizzas has been processed.Your total cost is " + totalPrice + ".")
+    alert("Number of pizzas" + getNumber() + " . Dear Customer your balance is " + totalPrice + ".")
 
 }
 
@@ -74,7 +74,7 @@ $(document).ready(function () {
         var number = $("input#number").val();
         var location = $("input#location").val();
 
-        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
+        alert("Yoooo! " + name + ". Delivery address noted of " + location + " will be packaged and delivered with in 1hr.Thank you for choosing us!.");
         // $(this).get(0).reset();
         // event.preventDefault();
     });
