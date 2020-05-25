@@ -7,10 +7,12 @@ function getCrustCost() {
     var selectedCrust = document.getElementById("crust").value;
     return parseInt(selectedCrust);
 }
+
 function getNumber() {
     var selectedNumber = document.getElementById("numberofpizza").value;
     return parseInt(selectedNumber);
 }
+
 function mushrooms() {
     var mushroom = 0;
     var addMushroom = document.getElementById("toppingone");
@@ -28,6 +30,7 @@ function sausages() {
     }
     return parseInt(sausage);
 }
+
 function onions() {
     var onion = 0;
     var addonions = document.getElementById("toppingone");
@@ -36,6 +39,7 @@ function onions() {
     }
     return parseInt(onion);
 }
+
 function tikkaSaucee() {
     var tikkaSauce = 0;
     var addtikkaSauce = document.getElementById("toppingone");
@@ -44,6 +48,7 @@ function tikkaSaucee() {
     }
     return parseInt(tikkaSauce);
 }
+
 function mozarellaCheese() {
     var cheese = 0;
     var addmozarellaCheese = document.getElementById("toppingone");
@@ -56,9 +61,9 @@ function mozarellaCheese() {
 function calctotalPrice(e) {
     event.preventDefault();
     var totalPrice = (getSizeCost() + getCrustCost() + mushrooms()) * (getNumber());
-    
-        console.log(totalPrice);
-    alert("Total Cost of Pizzas is" + getNumber() + " pizzas has been processed.Your total cost is " + totalPrice +"." )
+
+    console.log(totalPrice);
+    alert("Total Cost of Pizzas is" + getNumber() + " pizzas has been processed.Your total cost is " + totalPrice + ".")
 
 }
 
@@ -69,9 +74,9 @@ $(document).ready(function () {
         var number = $("input#number").val();
         var location = $("input#location").val();
 
-        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " +  location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
+        alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
         // $(this).get(0).reset();
         // event.preventDefault();
     });
-    
+
 });
