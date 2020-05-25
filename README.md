@@ -1,5 +1,5 @@
 # Project Name
-
+Pizza Hub - A fictional application that lets you order what type of pizza you want 
 # Project Description
 
 # Author
