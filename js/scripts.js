@@ -13,22 +13,22 @@ class Pizza{
   
     pricePerType(){
       if (this.type === "Cheesey Chicken"){
-        this.price = 300;
+        this.price = 100;
         return this.price;
       } else if (this.type === "Hippy Hawaiian"){
+        this.price = 200;
+        return this.price;
+      } else if (this.type === "Casual Day"){
+        this.price = 300;
+        return this.price;
+      } else if (this.type === "Cheese Combo"){
         this.price = 400;
         return this.price;
-      } else if (this.type === "Stripylicious"){
-        this.price = 600;
-        return this.price;
-      } else if (this.type === "Sweet Pie"){
+      } else if (this.type === "Vegan Fry"){
         this.price = 500;
         return this.price;
-      } else if (this.type === "Classic Peperoni"){
+      } else if (this.type === "Pepperoni Classic"){
         this.price = 600;
-        return this.price;
-      } else if (this.type === "Heissy Hot"){
-        this.price = 400;
         return this.price;
       }
     }
@@ -40,7 +40,7 @@ class Pizza{
         typePrice += 500;
         return typePrice;
       } else if (this.size === "Medium"){
-        typePrice += 300;
+        typePrice += 250;
         return typePrice;
       } else {
         return typePrice;
