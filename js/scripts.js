@@ -21,15 +21,6 @@ class Pizza{
       } else if (this.type === "Casual Day"){
         this.price = 300;
         return this.price;
-      } else if (this.type === "Cheese Combo"){
-        this.price = 400;
-        return this.price;
-      } else if (this.type === "Vegan Fry"){
-        this.price = 500;
-        return this.price;
-      } else if (this.type === "Pepperoni Classic"){
-        this.price = 600;
-        return this.price;
       }
     }
   
