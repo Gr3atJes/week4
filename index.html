@@ -2,10 +2,13 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>La Pizzeria</title>
+  <title>Pizza Hub</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Manjari|Pattaya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
   <link rel="icon" href="images/icons/pizza.png" type="img/jpg">
+  <script src="https://kit.fontawesome.com/2e65670cdd.js"></script>
 </head>
 <body>
   <!-- ALERT -->
@@ -24,17 +27,22 @@
   </div>
   <!-- END OF ALERT -->
 
+  <!-- navbar -->
+ 
+  <!-- end of navbar -->
 
   <!-- jumbotron -->
   <div class="jumbotron jumbo-bg">
     <div class="jumbotron-text">
-      <h1 class="text-white c-head align-center heading">Feel home at PizzaHub</h1>
-      <p class="text-white c-par align-center heading">Taste our world class recipies!</p>
+      <h1 class="text-white c-head align-center heading">Welcome to La Pizzeria</h1>
+      <p class="text-white c-par align-center heading">Everyone gets a slice!</p>
     </div>
   </div>
-  
+  <!-- end of jumbotron -->
+
+  <!-- menu header -->
   <div class="container">
-    <h2 class="align-center" id="our-menu"> Menu</h2>
+    <h2 class="align-center" id="our-menu">Here is our menu</h2>
     <hr class="style-one">
   </div>
   <!-- end of menu header -->
@@ -42,9 +50,10 @@
     <div class="row">
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
-          <img src="images/pexels-photo-825661.jpeg" class="card-img" alt="...">
+          <img src="images/pexels-photo-263041.jpeg" class="card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Cheesey Chicken</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-one"><i class="fas fa-shopping-cart"></i></button>
           </div>
         </div>
@@ -55,6 +64,7 @@
           <img src="images/pexels-photo-803290.jpeg" class="card-img" alt="...">
           <div class="card-body">
             <h5 class="card-title">Hippy Hawaiian</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
             <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-two"><i class="fas fa-shopping-cart"></i></button>
           </div>
         </div>
@@ -62,9 +72,10 @@
 
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
         <div class="card">
-          <img src="images/pexels-photo-280453.jpeg" class="card-img" alt="...">
+          <img src="images/pexels-photo-825661.jpeg" class="card-img" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Casual Day</h5>
+            <h5 class="card-title">Stripylicious</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
             <button type="button" class="btn btn-outline-secondary" disabled><i class="fas fa-shopping-cart"></i></button>
           </div>
         </div>
@@ -72,9 +83,11 @@
 
       
 
-      
 
     
+
+    
+
   <!-- modals -->
   <div class="modal fade" id="pizza-one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -85,7 +98,6 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-
         <div class="modal-body">
           <form id="pizza-one-form">
             <label>
@@ -96,20 +108,20 @@
             <label>
               Pick Your Size:
               <select class="form-control drop" id="size-selector" required>
-                <option>Small@100</option>
-                <option>Medium@250</option>
-                <option>Large@500</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
               </select>
             </label>
             <br>
             <label>
               Topping Options:
               <select class="form-control drop" id="topping-selector" required>
-                <option>Normal Bacon@50</option>
-                <option>Double Cheese@75</option>
-                <option>Extra Chilli@80</option>
-                <option>Extra Dip@95</option>
-                <option>Vegan Combo@105</option>
+                <option>Standard</option>
+                <option>Double Toppings</option>
+                <option>Extra Cheese</option>
+                <option>Extra Dip</option>
+                <option>Diced Pineapples</option>
               </select>
             </label>
             <br>
@@ -117,9 +129,9 @@
               Crust Options:
               <select class="form-control drop" id="crust-selector" required>
                 <option>Standard</option>
-                <option>Double Double</option>
-                <option>Ultra Fry</option>
-                <option>Thin Crust</option>
+                <option>Italian Thin Crust</option>
+                <option>Pan Pizza</option>
+                <option>American Hand Tossed</option>
               </select>
             </label>
             <div class="form-check">
@@ -186,20 +198,20 @@
             <label>
               Pick Your Size:
               <select class="form-control drop" id="size-selector2" required>
-                <option>Small@100</option>
-                <option>Medium@250</option>
-                <option>Large@500</option>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
               </select>
             </label>
             <br>
             <label>
               Topping Options:
               <select class="form-control drop" id="topping-selector2" required>
-                <option>Normal Bacon@50</option>
-                <option>Double Cheese@75</option>
-                <option>Extra Chilli@80</option>
-                <option>Extra Dip@95</option>
-                <option>Vegan Combo@105</option>
+                <option>Standard</option>
+                <option>Double Toppings</option>
+                <option>Extra Cheese</option>
+                <option>Extra Dip</option>
+                <option>Diced Pineapples</option>
               </select>
             </label>
             <br>
@@ -207,9 +219,9 @@
               Crust Options:
               <select class="form-control drop" id="crust-selector2" required>
                 <option>Standard</option>
-                <option>Double Double</option>
-                <option>Ultra Fry</option>
-                <option>Thin Crust</option>
+                <option>Italian Thin Crust</option>
+                <option>Pan Pizza</option>
+                <option>American Hand Tossed</option>
               </select>
             </label>
             <div class="form-check">
@@ -262,11 +274,19 @@
     <h1 class="text-white us align-center heading">About Us</h1>
   </div>
   <div class="container">
-    <p class="align-center">PizzaHub   Kenya is now a part of this international story of pizza success.</p>
+    <p class="align-center">La Pizzeria is currently located at 111 N Eastern Ave, Moore, OK 73160. Order your favorite pizza, pasta, salad, and more, all with the click of a button. We accept orders online for pickup. By 1989, 5000 stores were cooking up our signature pizza experience all over the US. Today, there are more than 11.000 Domino's Pizza around the world, 6000 of which are outside the US. Kenya is now a part of this international story of pizza success.</p>
     <hr class="style-one">
   </div>
 
-  
+  <div class="middle">
+    <div class="card mx-auto founder" style="width: 18rem;">
+      <img src="images/adult-bake-bakery-724212.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Word from our founder..</strong></h5>
+        <p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+      </div>
+    </div>
+  </div>
   <!-- end of about us -->
 
   <!-- Footer -->
@@ -283,11 +303,11 @@
         <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
           <div class="footer-logo">
             <img src="images/icons/pizza.png" alt="" width="40" height="40">
-            <h5 class="brand-name reduce">PizzaHub</h5>
+            <h5 class="brand-name reduce">La Pizzeria</h5>
           </div>
           <br>
           <p>Order or dine with us today!</p>
-          <p>Opening Hours: 7am to 7pm</p>
+          <p>Opening Hours: 9am to 10pm</p>
           </div>
           <!-- Grid column -->
 
@@ -295,6 +315,19 @@
 
           <hr class="w-100 clearfix d-md-none">
 
+          <!-- Grid column -->
+          <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a href="#!" class="link">Top 5 restaurants</a>
+            </p>
+            <p>
+              <a href="#!" class="link">Best Pizza Awards</a>
+            </p>
+            <p>
+              <a href="#!" class="link">This is Ess: La Pizzeria, Must Visit</a>
+            </p>
+          </div>
 
           <!-- Grid column -->
           <hr class="w-100 clearfix d-md-none">
@@ -303,13 +336,13 @@
           <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold" id="contact-us">Contact</h6>
             <p>
-              <i class="fas fa-home mr-3"></i> Envelope's Center
+              <i class="fas fa-home mr-3"></i> The Hub Karen, NRB, KE
             </p>
             <p>
-              <i class="fas fa-envelope mr-3"></i> pizzahub.com
+              <i class="fas fa-envelope mr-3"></i> info@lapizzeria.com
             </p>
             <p>
-              <i class="fas fa-phone mr-3"></i> + 254 722 530 123
+              <i class="fas fa-phone mr-3"></i> + 254 765 600 300
             </p>
           </div>
           <!-- Grid column -->
@@ -321,13 +354,13 @@
           <!-- Grid column -->
           <div class="col-md-7 col-lg-8 col-sm-12">
             <!--Copyright-->
-            <p class="text-center text-md-left">© 2019 Copyright:<strong> PizzaHub</strong></p>
+            <p class="text-center text-md-left">© 2019 Copyright:<strong>La Pizzeria</strong></p>
           </div>
           <!-- Grid column -->
           <!-- Grid column -->
           <div class="col-md-5 col-lg-4 col-sm-12 ml-lg-0">
 
-          
+           
                   </a>
                 </li>
               </ul>
@@ -341,7 +374,7 @@
   </footer>
   <!-- Footer -->
 
-  <script src="js/jquery.js"  ></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
