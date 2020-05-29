@@ -1,132 +1,423 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset
-    <title>PizzaHub</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-
+  <meta charset="utf-8">
+  <title>La Pizzeria</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Manjari|Pattaya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/icons/pizza.png" type="img/jpg">
+  <script src="https://kit.fontawesome.com/2e65670cdd.js"></script>
 </head>
-
 <body>
+  <!-- ALERT -->
+  <div class="alert alert-primary alert-dismissible fade show" role="alert" id="my-alert">
+    Thank you, your order has been received <span id="where-to"></span>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="close-alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+
+  <div class="alert alert-primary alert-dismissible fade show" role="alert" id="my-alert2">
+    Thank you, your order has been received <span id="where-to2"></span>.
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" id="close-alert">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <!-- END OF ALERT -->
+
+
+  <!-- jumbotron -->
+  <div class="jumbotron jumbo-bg">
+    <div class="jumbotron-text">
+      <h1 class="text-white c-head align-center heading">Welcome to La Pizzeria</h1>
+      <p class="text-white c-par align-center heading">Everyone gets a slice!</p>
+    </div>
+  </div>
+  <!-- end of jumbotron -->
+
+  <!-- menu header -->
   <div class="container">
-  <img src="images/pexels-photo-1653877.jpeg" alt="pizza"  width="100%">
-  <div class="centered">Welcome to PizzaHub. Great Collections of amazing pizzas</div>
+    <h2 class="align-center" id="our-menu">Here is our menu</h2>
+    <hr class="style-one">
   </div>
+  <!-- end of menu header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <img src="images/appetizing-cheese-delicious-2260208.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cheesey Chicken</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-one"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
 
-<div class="row">
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <img src="images/beef-cheese-delicious-262977.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hippy Hawaiian</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+            <button type="button" class="btn btn-outline-secondary" data-toggle="modal" data-target="#pizza-two"><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
 
-  <div class="column">
-  <div class="card">
-    <img src="images/card.jfif" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Chilli Cheese</b></h4> 
-      <p>Basic and yummy!</p> 
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <img src="images/crust-delicious-food-1069450.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Stripylicious</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <button type="button" class="btn btn-outline-secondary" disabled><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <img src="images/baked-delicious-dish-2714722.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Sweet Pie</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+            <button type="button" class="btn btn-outline-secondary" disabled><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <img src="images/appetizing-cheese-crust-2260201.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Classic Peperoni</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+            <button type="button" class="btn btn-outline-secondary" disabled><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+        <div class="card">
+          <img src="images/baked-cellphone-cheese-2231158.jpg" class="card-img" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Heissy Hot</h5>
+            <p class="card-text">Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+            <button type="button" class="btn btn-outline-secondary" disabled><i class="fas fa-shopping-cart"></i></button>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  </div>
 
-<div class="column">
-  <div class="card">
-    <img src="images/pizza1.jfif" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Hawaiian Madness</b></h4> 
-      <p>Combo from the great hawaiian hills</p> 
-    </div>
-  </div>
-</div>
-
-<div class="column">
-  <div class="card">
-    <img src="images/pizza2.jfif" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Vegan Boy</b></h4> 
-      <p>For all you vegan lovers</p> 
-    </div>
-  </div>
-</div>
-
-  <div class="column">
-  <div class="card">
-    <img src="images/pizza3.jfif" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Popular Mac</b></h4> 
-      <p>Once in a while you would just eat this</p> 
-    </div>
-  </div>
-</div>
-  
-  <div class="column">
-  <div class="card">
-    <img src="images/pizza4.jfif" alt="Avatar" style="width:100%">
-    <div class="container">
-      <h4><b>Gluten Fav</b></h4> 
-      <p>Oooh the goodness in this!</p> 
-    </div>
-  </div>
-  </div>
-  
-  
-        <div class="order row">
-            <div class="col-md-6">
-                    Fill in the form </h3>
-                    <div class="jumbotron">
-
-                <form action="" id="pizzainfo">
-                    <label for="">Choose your pizza size</label>
-                    <select class="form-control" name="size" id="size">
-                        <option value="2000">Large @ ksh 2000</option>
-                        <option value="1500">Medium @ ksh 1500</option>
-                        <option value="500">Small @ ksh 500</option>
-                    </select>
-
-                    <label for="">Choose your desired crust type</label>
-                    <select class="form-control" name="" id="crust">
-                        <option value="500" name="crust">stuffed crust @ ksh500
-                        <option value="250" name="crust">Crispy @ ksh 250
-                        <option value="100" name="crust">Glutten free @ ksh 100
-                    </select>
-
-                    <label for="">Choose your Desired toppings</label> <br>
-                    <input value="50" type="checkbox" id="toppingone">Mushrooms
-                    <input value="50" type="checkbox" id="toppingone">Pepperoni
-                    <input value="50" type="checkbox" id="toppingone">Onions
-                    <input value="50" type="checkbox" id="toppingone">Chilli Sauce
-                    <input value="50" type="checkbox" id="toppingone"> Cheese
-
-                    <label for="">Input Quantity</label>
-                    <input class="form-control form-group" type="text" id="numberofpizza">
-                    <button name="button" type="submit" id="submit" value="Check-Out"
-                        onclick="calctotalPrice()">Submit</button>
-                </form>
+  <!-- modals -->
+  <div class="modal fade" id="pizza-one" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pizza-one-label">Cheesey Chicken</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="pizza-one-form">
+            <label>
+              Quantity:
+              <input type="number" class="form-control" id="pizza-quantity" min="1" required>
+            </label>
+            <br>
+            <label>
+              Pick Your Size:
+              <select class="form-control drop" id="size-selector" required>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </label>
+            <br>
+            <label>
+              Topping Options:
+              <select class="form-control drop" id="topping-selector" required>
+                <option>Standard</option>
+                <option>Double Toppings</option>
+                <option>Extra Cheese</option>
+                <option>Extra Dip</option>
+                <option>Diced Pineapples</option>
+              </select>
+            </label>
+            <br>
+            <label>
+              Crust Options:
+              <select class="form-control drop" id="crust-selector" required>
+                <option>Standard</option>
+                <option>Italian Thin Crust</option>
+                <option>Pan Pizza</option>
+                <option>American Hand Tossed</option>
+              </select>
+            </label>
+            <div class="form-check">
+              <label for="delivery-options">
+                Delivery:
+                <input type="radio" class="delivery" name="delivery-options" value="delivery" id="to-be-delivered" required>
+              </label>
+              <label for="delivery-options">
+                Pick Up:
+                <input type="radio" class="delivery" name="delivery-options" value="pick-up" id="to-be-picked" required>
+              </label>
+              <br>
+              <label id="location-hide">
+                <input type="text" class="form-control box" placeholder="Deliver To" id="delivery-location">
+              </label>
             </div>
-        </div>
-        </div>
-
-<div class="jumbotron">      
-            <div class="col-md-6">
-                <div id="formlocation">
-                    <h3>For delivery services,enter your location details below</h3>
-                    <form id="delivery">
-                        <label for="name">Name</label>
-                        <input class="form-control" type="text" name="" id="name" required="required">
-                        <label for="location">Delivery Address</label>
-                        <input class="form-control" type="text" id="location" placeholder="Delivery Address">
-                        <label for="phonenumber">Phone Number</label>
-                        <input class="form-control" type="tel" placeholder="Phone Number" id="number"> <br>
-                        <button type="submit" name="button" id="submit">submit</button>
-                    </form>
+            <div class="container">
+              <div class="summary">
+                <div id="price-breakdown">
+                  <div class="summary-items">
+                    <p class="space"><span id="size-price"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="toppings-price"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="crust-price"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="delivery-price"></span></p>
+                  </div>
                 </div>
+                <div class="summary-items total" id="total">
+                  <h5 class="sum-price" id="total-price"></h5>
+                </div>
+              </div>
+              <input type="submit" class="btn btn-primary" id="get-price" value="Next">
+              <button type="button" class="btn btn-primary" id="checkout" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
             </div>
-        </div>
+
+          </form>
         </div>
 
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pizza-two" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="pizza-two-label">Hippy Hawaiian</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="pizza-two-form">
+            <label>
+              Quantity:
+              <input type="number" class="form-control" id="pizza-quantity2" min="1" required>
+            </label>
+            <br>
+            <label>
+              Pick Your Size:
+              <select class="form-control drop" id="size-selector2" required>
+                <option>Small</option>
+                <option>Medium</option>
+                <option>Large</option>
+              </select>
+            </label>
+            <br>
+            <label>
+              Topping Options:
+              <select class="form-control drop" id="topping-selector2" required>
+                <option>Standard</option>
+                <option>Double Toppings</option>
+                <option>Extra Cheese</option>
+                <option>Extra Dip</option>
+                <option>Diced Pineapples</option>
+              </select>
+            </label>
+            <br>
+            <label>
+              Crust Options:
+              <select class="form-control drop" id="crust-selector2" required>
+                <option>Standard</option>
+                <option>Italian Thin Crust</option>
+                <option>Pan Pizza</option>
+                <option>American Hand Tossed</option>
+              </select>
+            </label>
+            <div class="form-check">
+              <label for="delivery">
+                Delivery:
+                <input type="radio" class="delivery" value="delivery" id="to-be-delivered2" name="delivery" required>
+              </label>
+              <label for="delivery">
+                Pick Up:
+                <input type="radio" class="delivery" value="pick-up" id="to-be-picked2" name="delivery" required>
+              </label>
+              <br>
+              <label id="location-hide2">
+                <input type="text" placeholder="Deliver To" id="delivery-location2">
+              </label>
+            </div>
+            <div class="container">
+              <div class="summary">
+                <div id="price-breakdown2">
+                  <div class="summary-items">
+                    <p class="space"><span id="size-price2"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="toppings-price2"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="crust-price2"></span></p>
+                  </div>
+                  <div class="summary-items">
+                    <p class="space"><span id="delivery-price2"></span></p>
+                  </div>
+                </div>
+                <div class="summary-items total" id="total2">
+                  <h5 class="sum-price" id="total-price2"></h5>
+                </div>
+              </div>
+              <input type="submit" class="btn btn-primary" id="get-price2" value="Next">
+              <button type="button" class="btn btn-primary" id="checkout2" data-dismiss="modal"><i class="fas fa-credit-card"></i> Checkout</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- end of modals -->
+
+  <!-- about us -->
+  <div class="jumbotron about" id="about-us">
+    <h1 class="text-white us align-center heading">About Us</h1>
+  </div>
+  <div class="container">
+    <p class="align-center">La Pizzeria is currently located at 111 N Eastern Ave, Moore, OK 73160. Order your favorite pizza, pasta, salad, and more, all with the click of a button. We accept orders online for pickup. By 1989, 5000 stores were cooking up our signature pizza experience all over the US. Today, there are more than 11.000 Domino's Pizza around the world, 6000 of which are outside the US. Kenya is now a part of this international story of pizza success.</p>
+    <hr class="style-one">
+  </div>
+
+  <div class="middle">
+    <div class="card mx-auto founder" style="width: 18rem;">
+      <img src="images/adult-bake-bakery-724212.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title"><strong>Word from our founder..</strong></h5>
+        <p class="card-text">"Some quick example text to build on the card title and make up the bulk of the card's content."</p>
+      </div>
+    </div>
+  </div>
+  <!-- end of about us -->
+
+  <!-- Footer -->
+  <footer class="page-footer font-small mdb-color pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+      <hr class="style-one">
+
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+
+        <!-- Grid column -->
+        <div class="col-sm-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <div class="footer-logo">
+            <img src="images/icons/pizza.png" alt="" width="40" height="40">
+            <h5 class="brand-name reduce">La Pizzeria</h5>
+          </div>
+          <br>
+          <p>Order or dine with us today!</p>
+          <p>Opening Hours: 9am to 10pm</p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <hr class="w-100 clearfix d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
+            <p>
+              <a href="#!" class="link">Top 5 restaurants</a>
+            </p>
+            <p>
+              <a href="#!" class="link">Best Pizza Awards</a>
+            </p>
+            <p>
+              <a href="#!" class="link">This is Ess: La Pizzeria, Must Visit</a>
+            </p>
+          </div>
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none">
+
+          <!-- Grid column -->
+          <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold" id="contact-us">Contact</h6>
+            <p>
+              <i class="fas fa-home mr-3"></i> The Hub Karen, NRB, KE
+            </p>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@lapizzeria.com
+            </p>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 254 765 600 300
+            </p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Footer links -->
+        <hr class="style-one">
+        <!-- Grid row -->
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 col-sm-12">
+            <!--Copyright-->
+            <p class="text-center text-md-left">© 2019 Copyright:<strong>La Pizzeria</strong></p>
+          </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 col-sm-12 ml-lg-0">
+
+            <!-- Social buttons -->
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="https://facebook.com" class="btn-floating btn-sm rgba-white-slight mx-1 link" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://twitter.com" class="btn-floating btn-sm rgba-white-slight mx-1 link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://instagram.com" class="btn-floating btn-sm rgba-white-slight mx-1 link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+    </div>
+    <!-- Footer Links -->
+  </footer>
+  <!-- Footer -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
-
-<script src="js/jquery.js"></script>
-<script src="js/scripts.js"></script>
-
 </html>

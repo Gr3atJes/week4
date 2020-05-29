@@ -1,72 +1,103 @@
 /* global styling */
-body {
-  font-family: "Julius Sans One", sans-serif;
-}
-.container {
-  background-image:url(...)
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color:white;
+body{
+  font-family: 'Julius Sans One', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
-
-/* Remove extra left and right margins, due to padding */
-.row {
-  margin: 0 -5px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive columns */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
-
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 16px;
+.align-center{
   text-align: center;
-  background-color: #f1f1f1;
 }
 
-.alert {
+.transparent{
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  background-attachment: fixed;
+}
+
+.alert{
   text-align: center;
   margin-bottom: auto;
   display: none;
-  position: fixed;
+  position:fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  z-index: 9999;
-  border-radius: 0px;
+  z-index:9999;
+  border-radius:0px;
+}
+
+/* navbar styling */
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+}
+
+.nav-link{
+  font-family: 'Julius Sans One', sans-serif;
+  color: #000;
+}
+
+.brand-name{
+  font-family: 'Pattaya', sans-serif;
+  color: #000;
+}
+
+.navbar-brand{
+  display: flex;
+}
+
+.navbar-brand h5{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+/* jumbotron styling */
+.heading{
+  font-family: 'Abril Fatface', cursive;
+}
+
+.jumbotron{
+  border-radius: 0;
+}
+
+.jumbotron-text{
+  margin-top: 150px;
+}
+
+hr.style-one {
+  border: 0;
+  height: 1px;
+  background: #333;
+  background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);
+  background-image: -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+.c-head{
+  font-weight:900;
+  font-size: 58px;
+  mix-blend-mode: luminosity;
+}
+
+.c-par{
+  font-weight: 900;
+  mix-blend-mode: luminosity;
+}
+
+.jumbo-bg{
+  background-image: url("../images/blur-burn-dark-1082343.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 480px;
+}
+/* cards styling */
+.card{
+  margin-bottom: 20px;
+}
+
+.flex{
+  display: flex;
 }
 
 /* modal styling */
@@ -74,91 +105,92 @@ form {
   text-align: center;
 }
 
-.drop {
+.drop{
   width: 210px;
 }
 
-#location-hide {
+#location-hide{
   display: none;
 }
 
-#location-hide2 {
+#location-hide2{
   display: none;
 }
 
-.summary {
+.summary{
   text-align: left;
   margin-bottom: 0px;
   float: left;
 }
 
-.summary-items {
+.summary-items{
   display: flex;
   font-size: 12px;
   margin-bottom: 0;
 }
 
-.space {
+.space{
   margin-bottom: 0;
 }
 
-.total {
+.total{
   font-weight: 800;
 }
 
-#get-price:hover {
+#get-price:hover{
   text-decoration: none;
 }
 
-#pizza-quantity {
+#pizza-quantity{
   width: 100px;
 }
 
-#pizza-quantity2 {
+#pizza-quantity2{
   width: 100px;
 }
 
-.sum-price {
+.sum-price{
   cursor: pointer;
 }
 
-#checkout {
+#checkout{
   display: none;
 }
 
-#checkout2 {
+#checkout2{
   display: none;
+}
+
+/* about us */
+.about{
+  background-image: url("../images/italian-italy-pasta-3498.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+}
+
+.us{
+  font-size: 58px;
+  margin-top: 20px;
+}
+
+/* founder */
+.founder{
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 
 /* footer */
-.footer-logo {
+.footer-logo{
   display: flex;
 }
 
-.reduce {
+.reduce{
   margin-top: 10px;
   margin-left: 5px;
 }
 
-.link {
+.link{
   color: #000;
 }
-.jumbotron {
-  padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color:green;
-  border-radius: 0.3rem;
-}
-
-@media (min-width: 576px) {
-  .jumbotron {
-    padding: 4rem 2rem;
-  }
-}
-
-.jumbotron-fluid {
-  padding-right: 0;
-  padding-left: 0;
-  border-radius: 0;
-}
-
